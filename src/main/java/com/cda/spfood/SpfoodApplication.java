@@ -1,4 +1,4 @@
-package com.spfood.spfood;
+package com.cda.spfood;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
