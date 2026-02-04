@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 @RestController
-@RequestMapping(value="/test", produces="application/json")
+@RequestMapping(value="/", produces="application/json")
 @RequiredArgsConstructor
 public class TestController {
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String hello(){
         return "hello";
     }
