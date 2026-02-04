@@ -30,7 +30,7 @@ public class UserController {
     @PostMapping
     public ResponseEntity<String> saveUser(@RequestBody UserRequestDTO user) {
         userService.save(user);
-        return ResponseEntity.ok("{\"message\": \"Utilisateur à bien été modifié\"}");
+        return ResponseEntity.ok("{\"message\": \"Utilisateur ajouté\"}");
     }
 
     @PutMapping("/{id}")
