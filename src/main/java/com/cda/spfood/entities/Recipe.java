@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
@@ -29,4 +31,11 @@ public class Recipe {
 
     @Column(name = "RE_visibility", nullable = false)
     private Boolean visibility;
+
+    @ManyToOne
+    @JoinColumn(name = "US_ID")
+    private User owner;
+
+    @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL)
+    private List<RecipeProduct> ingredients;
 }
