@@ -16,6 +16,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "PR_ID")
     private Integer id;
 
     @Column(name = "PR_lib", nullable = false)
