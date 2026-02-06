@@ -7,3 +7,12 @@ CREATE TABLE users (
     US_phone VARCHAR(10) NOT NULL,
     US_email VARCHAR(150) NOT NULL UNIQUE
 );
+
+CREATE TABLE recipes (
+    RE_ID INT AUTO_INCREMENT PRIMARY KEY,
+    RE_name VARCHAR(100) NOT NULL,
+    RE_preparation_time INTEGER NOT NULL,
+    RE_cooking_time INTEGER NOT NULL,
+    RE_cal INTEGER NOT NULL,
+    RE_visibility BIT DEFAULT FALSE
+)
