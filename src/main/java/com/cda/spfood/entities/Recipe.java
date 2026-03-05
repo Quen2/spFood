@@ -33,7 +33,7 @@ public class Recipe {
     private Boolean visibility;
 
     @ManyToOne
-    @JoinColumn(name = "US_ID")
+    @JoinColumn(name = "US_ID", nullable = false)
     private User owner;
 
     @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL)
