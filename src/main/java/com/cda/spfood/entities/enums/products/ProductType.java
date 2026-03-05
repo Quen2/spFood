@@ -1,8 +1,8 @@
 package com.cda.spfood.entities.enums.products;
 
 public enum ProductType {
-    BOISSONS,
+    BOISSON,
     LEGUMES,
-    VIANDES,
+    VIANDE,
     FRUITS
 }
