@@ -25,6 +25,7 @@ Une application **Spring Boot + JWT** permettant de créer, partager et gérer d
 | DELETE  | /api/recipes/{id} | Supprimer une recette par ID         | Oui                      |
 | GET     | /api/products     | Récupérer les produits               | Oui                      |
 | POST |  /api/products     | Ajouter un produit                   | Oui                      |
+| GET  | /api/recipes/{id}/pdf | Exporte une recette au format PDF | Oui |
 
 ---
 
